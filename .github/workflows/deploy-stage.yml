@@ -1,0 +1,11 @@
+name: Deploy to ECS Stage
+
+on:
+  push:
+    branches: [stage]
+
+env:
+  AWS_REGION: ap-south-1
+  ECR_REPOSITORY: arifac-stage
+  ECS_CLUSTER: arifac-stage-cluster
+  ECS_SERVICE: arifac-stage-servic
